@@ -98,7 +98,7 @@ export default function Header() {
             </section>
             <div style={{justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'row', gap: '1rem'}}>
                 <p>&copy; 2023 RAB Import - Todos los derechos reservados</p>
-                <Image src="https://summerlove.lat/img/logo/desarrollado-por-summerlove.png" alt="Logo" width={50} height={50}></Image>
+                <Image src="https://i.postimg.cc/4xZW23zx/desarrollado-por-summerlove.png" alt="Logo" width={50} height={50}></Image>
             </div>
         </footer>
     );
