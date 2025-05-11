@@ -13,7 +13,7 @@ export default function AboutLayout({
       <Header />
       <Navbar />
 
-      <div className="text-2xl text-center mr-3 ml-3">
+      <div className=" bg-gray-50   ">
 
         {children}
       </div>
