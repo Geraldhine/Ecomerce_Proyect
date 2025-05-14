@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         hostname: 'summerlove.lat',
         pathname: '/img/**',
       },
+      {
+        protocol:'https',
+        hostname: 'i.postimg.cc',
+      },
     ],
   },
 };

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
+
     <div className="mr-[20px] ml-[20px] sm:mr-[20px] sm:ml-[20px] md:mr-[40px] md:ml-[40px] lg:mr-[80px] lg:ml-[80px]">
       <div className="mt-[20px] mb-[20px]">
         <hr />
@@ -78,4 +79,5 @@ export default function HomePage() {
 
     </div>
   );
+
 }
