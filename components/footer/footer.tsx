@@ -61,9 +61,9 @@ export default function Footer() {
             </a>
             <a className='flex gap-1 mt-3' href="">
               <IoCall className='text-blue-400'/>
-              <p className='text-[14px]'>(+51) 998 327 905 </p>
+              <p className='text-[14px]'>(+51) 998 327 906 </p>
             </a>
-            <a className='flex gap-1 mt-3' href="">
+            <a className='flex gap-1 mt-3' href="#">
               <IoMail className='text-blue-400'/>
               <p className='text-[14px]'>ventas@rabimport.com </p>
             </a>
@@ -75,7 +75,7 @@ export default function Footer() {
             </a>
             <a className='flex gap-1 mt-3' href="">
               <IoCall className='text-blue-400'/>
-              <p className='text-[14px]'>(+51) 998 323 404 </p>
+              <p className='text-[14px]'>(+51) 998 323 405 </p>
             </a>
             <a className='flex gap-1 mb-2 mt-3' href="">
               <IoMail className='text-blue-400'/>

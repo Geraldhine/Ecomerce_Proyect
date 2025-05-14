@@ -1,13 +1,15 @@
 import Image from 'next/image';
-import { IoLocation, IoLogoWhatsapp, IoLocationOutline, IoCallOutline } from 'react-icons/io5';
+import { IoLogoWhatsapp, IoLocationOutline, IoCallOutline } from 'react-icons/io5';
 
 
 export default function ShopPage() {
   return (
-    <div>
-        <div className="flex ml-3 gap-3 justify-items-center-safe mb-2">
-          <IoLocation className="text-blue-900 text-[30px]"/>
-          <h1 className="font-bold text-blue-900 text-[30px]"> Nuestras Tiendas</h1>
+    <div className='ml-20 mr-20'>
+        <div className="flex ml-3 gap-3 justify-items-center-safe mt-4 mb-4">
+          <h2 className='text-[30px] font-bold flex justify-start justify-items-center gap-2 mt-3 mb-3 ml-3'>
+              <Image src="https://i.postimg.cc/y8tmJQgT/13-tiendas.png" width={40} height={40} alt="icono" />
+              <span className='text-blue-700'>Nuestras</span> Tiendas
+          </h2>
         </div>
 
         <div className="grid grid-cols-3  bg-blue-100 rounded mr-3 ml-3 mt-3 mb-3">
@@ -77,6 +79,6 @@ export default function ShopPage() {
           </div>
         </div>
 
-      </div>
+    </div>
   )
 }
