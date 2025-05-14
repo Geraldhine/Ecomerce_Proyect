@@ -22,7 +22,7 @@ export default function ShopPage() {
               </div>
           </div>
           <div className='justify-self-center-safe mt-4 mb-4'>
-              <Image src={'https://i.postimg.cc/PxTDFhbm/rab-1.jpg'} alt='imagen' width={350} height={100}></Image>
+              
           </div>
           <div>
               <h2 className="block justify-self-start font-semibold text-blue-900 ml-4 mt-3">Tienda</h2>
@@ -55,7 +55,7 @@ export default function ShopPage() {
               </div>
           </div>
           <div className='justify-self-center-safe mt-4 mb-4'>
-              <Image src={'https://i.postimg.cc/PxTDFhbm/rab-1.jpg'} alt='imagen' width={350} height={100}></Image>
+              {/* <Image src={'https://i.postimg.cc/PxTDFhbm/rab-1.jpg'} alt='imagen' width={350} height={100}></Image> */}
           </div>
           <div>
               <h2 className="block justify-self-start font-semibold text-blue-900 ml-4 mt-3">Tienda</h2>
