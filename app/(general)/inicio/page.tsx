@@ -9,8 +9,10 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <>
-    <span className="text-5xl text-center">Home Page</span>
-    </>
+    <section>
+      <div>
+        
+      </div>
+    </section>
   )
 }

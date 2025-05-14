@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Header from "@/components/ui/header/header";
 import { Navbar } from "@/components/ui/navbar/Navbar";
 import Subscribe from "@/components/ui/subscribe/subscribe";
@@ -19,7 +20,7 @@ export default function AboutLayout({
       </div>
     
     <Subscribe />
-      {/* <Footer/> */}
+      <Footer/>
     </>
 
 
