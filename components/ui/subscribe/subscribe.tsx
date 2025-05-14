@@ -1,6 +1,6 @@
 
 import { FaBell } from 'react-icons/fa';
-import { TextField, Box, autocompleteClasses } from "@mui/material";
+import { TextField, Box } from "@mui/material";
 import BotonSuscribete from './button';
 import { CgEnter } from 'react-icons/cg';
 

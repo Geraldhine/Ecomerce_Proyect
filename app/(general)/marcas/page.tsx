@@ -1,7 +1,7 @@
 import Card from "@/components/marcas/card"
 import type { Metadata } from "next"
 import { marcas } from "@/data/marcas"
-import NuestrasMarcas from "@/components/marcas/nuestrasMarcas"
+import SeccionBody from "@/components/ui/SeccionBody/SeccionBody"
 
 export const metadata: Metadata = {
   title: "Pricing Page",
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function MarcasPage() {
   return (
     <>
-      <NuestrasMarcas />
-      <div className="flex flex-wrap justify-center p-[8px] mt-4 gap-1">
+      <SeccionBody img={"https://www.rabimport.com/image/icono-marcas.png"} palabra1={"Nuestras "} palabra2={"marcas"}/>
+      <div className="flex flex-wrap justify-center p-[8px] gap-1  sm:gap-8 md:gap-8 lg:gap-10">
         {marcas.map((marca, index) => (
           <Card key={index} img={marca.img} description={marca.description} />
         ))}

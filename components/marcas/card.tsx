@@ -9,7 +9,7 @@ interface CardProps {
 
 export default function Card({ img, description }: CardProps) {
   return (
-    <Box className="flex flex-col justify-start items-start w-[120px] h-[300px]  overflow-hidden bg-white">
+    <Box className="flex flex-col justify-start items-start w-[120px] h-[300px]  overflow-hidden bg-white md:w-[220px] md:h-[300px] ">
       <Box className="flex flex-col justify-center items-center w-[100px] h-[70px]">  
         <img
           src={img}
