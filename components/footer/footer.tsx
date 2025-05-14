@@ -117,7 +117,7 @@ export default function Footer() {
       
       <div className='flex gap-2 justify-center mt-2 mb-2 bg-amber-50'>
         <p>&copy; 2023 RAB Import - Todos los derechos reservados</p>
-        <Image src="https://i.postimg.cc/4xZW23zx/desarrollado-por-summerlove.png" alt="Logo" width={70} height={60}></Image>
+        <Image src="https://i.postimg.cc/59mSfMcj/rua-final.png" alt="Logo" width={70} height={60}></Image>
       </div>
       
     </footer>
