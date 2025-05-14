@@ -52,6 +52,8 @@ export default function Slider<T extends { img: string; title: string ,descripti
     cantidad = 3;
   }
 
+  
+
   const nextImage = () => {
     setImagenActual((prev) => (prev + cantidad) % total);
   };
@@ -79,8 +81,8 @@ export default function Slider<T extends { img: string; title: string ,descripti
         )}
       </div>
       
-        <IoArrowBack  className="mt-2 flex justify-center gap-[10px]  absolute top-1/2" onClick={nextImage}/>
-        <IoArrowForward  className="mt-2 flex justify-center gap-[10px]  absolute  top-1/2 right-0" onClick={prevImage}/>
+        <IoArrowBack  className="mt-2 flex justify-center gap-[10px] text-[30px] absolute top-1/2" onClick={nextImage}/>
+        <IoArrowForward  className="mt-2 flex justify-center gap-[10px] text-[30px]  absolute  top-1/2 right-0" onClick={prevImage}/>
    
     </div>
   );

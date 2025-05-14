@@ -1,20 +1,16 @@
-import { Button } from '@mui/material'
-import React from 'react'
 
 
-interface BotonSuscribete {
+interface BotonSuscribeteProps {
     BotonSubscribete: string;
+   
 }
 
-export default function BotonSuscribete({ BotonSubscribete }: BotonSuscribete): React.JSX.Element {
+export default function BotonSuscribete({ BotonSubscribete }: BotonSuscribeteProps): React.JSX.Element {
     return (
-        <Button sx={{
-            backgroundColor:"lightblue", color: "#000000", fontSize: "13px", borderRadius: "4px", textTransform: "none",
-            '&:hover': {
-                backgroundColor: "#1976d2"
-            }
-        }}>
-            {BotonSubscribete}
-        </Button>
+        <button >
+            <a className="bg-blue-300 hover:bg-blue-700 text-black text-sm rounded px-4 py-1 transition-colors duration-200">
+                {BotonSubscribete}
+            </a>
+        </button >
     );
 }

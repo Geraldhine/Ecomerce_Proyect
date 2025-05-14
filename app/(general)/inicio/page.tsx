@@ -20,12 +20,19 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="mr-[20px] ml-[20px] sm:mr-[20px] sm:ml-[20px] md:mr-[40px] md:ml-[40px] lg:mr-[80px] lg:ml-[80px]">
+      <div className="mt-[20px] mb-[20px]">
+        <hr />
+      </div>
+
       <SeccionBody
         img={"https://www.rabimport.com/image/icon-asesores.png"}
         palabra1={"Nuestros"}
         palabra2={"Asesores"}
       />
       <Slider arreglo={asesores} tipo="asesores" />
+      <div className="mt-[20px] mb-[20px]">
+        <hr />
+      </div>
 
       <SeccionBody
         img={"https://www.rabimport.com/image/icon-servicios.png"}
@@ -33,12 +40,18 @@ export default function HomePage() {
         palabra2={"de empreas especializadas a su servicio"}
       />
       <AlianzaEmpresasItem />
+      <div className="mt-[20px] mb-[20px]">
+        <hr />
+      </div>
       <SeccionBody
         img={"https://www.rabimport.com/image/icon-testimonios.png"}
         palabra1={"Nuestros"}
         palabra2={"testimonios"}
       />
       <Slider arreglo={testimonios} tipo="testimonios" />
+      <div className="mt-[20px] mb-[20px]">
+        <hr />
+      </div>
       <SeccionBody
         img={"https://www.rabimport.com/image/icon-blogs.png"}
         palabra1={"Nuestros"}
@@ -51,6 +64,9 @@ export default function HomePage() {
         title={""}
         description={""}
       />
+      <div className="mt-[20px] mb-[20px]">
+        <hr />
+      </div>
       <SeccionBody
         img={"https://www.rabimport.com/image/icono-marcas.png"}
         palabra1={"Nuestras"}

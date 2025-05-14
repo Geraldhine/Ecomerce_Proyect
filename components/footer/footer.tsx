@@ -1,4 +1,3 @@
-
 import { IoCall, IoLocation, IoLogoFacebook, IoLogoInstagram, IoLogoTiktok, IoLogoYoutube, IoMail } from 'react-icons/io5';
 import Image from 'next/image';
 import React from 'react';
@@ -17,7 +16,7 @@ export default function Footer() {
         <div className='flex justify-between text-slate-50 gap-8 mb-2'>
           <div className='flex flex-1 gap-2 flex-col justify-items-normal text-center ml-3 mt-2' >
             <a className='flex gap-1 justify-center mt-2' href="">
-              <Image className='rounded' src={'https://i.postimg.cc/Lsvf49Yv/logo.jpg'} alt='logo' width={200} height={100}></Image>
+              <Image className='rounded' src={'https://i.postimg.cc/Lsvf49Yv/logo.jpg'} alt='logo' width={100} height={100}></Image>
             </a>
             <p className='text-[14px]'>42 años a su servicio, siempre con la mejor garantía en máquinas de coser y bordadoras.
               <br />Síguenos y entérate de nuestras ultimas noticias en nuestras redes sociales.
@@ -25,16 +24,16 @@ export default function Footer() {
             <div className='flex col-auto gap-2 justify-center'>
               
               <a href="https://www.facebook.com/rabimport.pe/" >
-              <IoLogoFacebook className='text-[34px]'/>
+              <IoLogoFacebook/>
               </a>
               <a href="https://www.youtube.com/@rabimportpe" >
-              <IoLogoYoutube className='text-[34px]'/>
+              <IoLogoYoutube/>
               </a>
               <a href="https://www.tiktok.com/@rabimport.pe" >
-              <IoLogoTiktok className='text-[34px]'/>
+              <IoLogoTiktok/>
               </a>
               <a href="https://www.instagram.com/rabimport/" >
-              <IoLogoInstagram className='text-[34px]'/>
+              <IoLogoInstagram/>
               </a>
             </div>
           </div>
@@ -116,9 +115,9 @@ export default function Footer() {
         </div>
       </section>
       
-      <div className='flex gap-2 justify-center items-center mt-2 mb-2 bg-amber-50'>
+      <div className='flex gap-2 justify-center mt-2 mb-2 bg-amber-50'>
         <p>&copy; 2023 RAB Import - Todos los derechos reservados</p>
-        <Image src="https://i.postimg.cc/59mSfMcj/rua-final.png" alt="Logo" width={70} height={60}></Image>
+        <Image src="https://i.postimg.cc/4xZW23zx/desarrollado-por-summerlove.png" alt="Logo" width={70} height={60}></Image>
       </div>
       
     </footer>
