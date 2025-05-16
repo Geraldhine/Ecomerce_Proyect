@@ -1,18 +1,18 @@
 "use client";
 import { jsx } from "react/jsx-runtime";
-import SliderItem from "./silder-item";
+import SliderItem from "./silder-item-Asesores";
 import { JSX, useState } from "react";
 import SliderItemTestimonios from "./Slider-item-Testimonios";
 import SliderItemMarcas from "./slider-item-marcas";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 
-interface SliderProps{
+interface SliderProps {
   arreglo: Array<any>;
   tipo: "asesores" | "marcas" | "testimonios";
 }
 
-export default function Slider<T extends { img: string; title: string ,description:string}>({ arreglo, tipo }: SliderProps) {
+export default function Slider<T extends { img: string; title: string, description: string }>({ arreglo, tipo }: SliderProps) {
   const renderItem = (item: T, index: number) => {
     switch (tipo) {
       case "asesores":
@@ -52,7 +52,7 @@ export default function Slider<T extends { img: string; title: string ,descripti
     cantidad = 3;
   }
 
-  
+
 
   const nextImage = () => {
     setImagenActual((prev) => (prev + cantidad) % total);
@@ -74,16 +74,22 @@ export default function Slider<T extends { img: string; title: string ,descripti
   };
 
   return (
-    <div className="w-full mt-8 mb-8 flex flex-col relative ">
-      <div className="flex gap-4 justify-center">
+    <div className="w-full mt-8 mb-8 relative">
+      <div className="flex flex-wrap justify-center gap-4 ">
         {obtenerImagenes().map((item, index) =>
           renderItem(item, (imagenActual + index) % total)
         )}
       </div>
-      
-        <IoArrowBack  className="mt-2 flex justify-center gap-[10px] text-[30px] absolute top-1/2" onClick={nextImage}/>
-        <IoArrowForward  className="mt-2 flex justify-center gap-[10px] text-[30px]  absolute  top-1/2 right-0" onClick={prevImage}/>
-   
+
+      <IoArrowBack
+        className="text-[30px] absolute top-1/2 left-2 cursor-pointer"
+        onClick={nextImage}
+      />
+      <IoArrowForward
+        className="text-[30px] absolute top-1/2 right-2 cursor-pointer"
+        onClick={prevImage}
+      />
     </div>
+
   );
 }

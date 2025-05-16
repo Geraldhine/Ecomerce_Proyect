@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-
 
 export const Navbar = () => {
   return (
-    <nav className="bg-blue-800 p-3  rounded hidden md:flex lg:flex sm:flex">
+    <nav className=" bg-gradient-to-t from-blue-500 to-blue-900 p-3 sticky rounded hidden md:flex lg:flex sm:flex">
       <div className="flex flex-row text-1xl gap-9 margin-left-10 text-[13px] text-white font-bold">
         <Link className="mr-2" href="/inicio">Inicio</Link>
         <Link className="mr-2" href="/productos">Productos</Link>

@@ -13,12 +13,18 @@ export const metadata: Metadata = {
 export default function MarcasPage() {
   return (
     <>
-      <SeccionBody img={"https://www.rabimport.com/image/icono-marcas.png"} palabra1={"Nuestras "} palabra2={"marcas"}/>
-      <div className="flex flex-wrap justify-center p-[8px] gap-1  sm:gap-8 md:gap-8 lg:gap-10">
+      <SeccionBody
+        img="https://www.rabimport.com/image/icono-marcas.png"
+        palabra1="Nuestras "
+        palabra2="marcas"
+      />
+
+      <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-4 px-4 py-8">
         {marcas.map((marca, index) => (
           <Card key={index} img={marca.img} description={marca.description} />
         ))}
       </div>
-      </>
+
+    </>
   )
 }

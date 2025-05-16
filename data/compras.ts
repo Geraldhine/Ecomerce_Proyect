@@ -6,62 +6,17 @@ export const compras =[
     },
     {
         titulo: "LENCERÍA Y ROPA INTERIOR",
-        descripcion: "",
+        descripcion: "sdsds",
         img: "https://i.postimg.cc/0j1tkMkP/polo.png"
     },
     {
         titulo: "ROPA DEPORTIVA",
-        descripcion: "",
+        descripcion: "ss",
         img: "https://i.postimg.cc/0j1tkMkP/polo.png"
     },
     {
         titulo: "MODA FITNESS",
-        descripcion: "",
+        descripcion: "ssss",
         img: "https://i.postimg.cc/0j1tkMkP/polo.png"
-    },
-    {
-        titulo: "GORROS",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "PRENDAS DE BEBÉS Y NIÑOS",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "JEANS",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "ROPA INDUSTRIAL/UNIFORMES",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "PANTALONES, TERNOS Y SASTRERÍA",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "CAMISAS",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "CUERO Y TAPICERÍA",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "BOLSOS Y MOCHILAS",
-        descripcion: "",
-        img: ""
-    },
-    {
-        titulo: "ROPA PARA MASCOTAS",
-        descripcion: "",
-        img: ""
-    },
+    }
 ]

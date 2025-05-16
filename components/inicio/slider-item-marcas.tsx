@@ -6,8 +6,8 @@ interface SliderItemAsesoresProps {
 
 export default function SliderItemMarcas({ img, title, description }: SliderItemAsesoresProps) {
   return (
-    <div className="w-[17%] h-[100px] flex flex-col items-center overflow-hidden rounded-lg overflow-hidden ">
-      <img src={img} alt="" className="w-full h-full object-contain" />
+    <div className="  h-[100px] w-[170px]  flex flex-col items-center overflow-hidden rounded-lg overflow-hidden ">
+      <img src={img} alt="" className=" h-full object-contain" />
     </div>
 
   )

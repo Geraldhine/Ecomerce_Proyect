@@ -9,7 +9,7 @@ const items = [
 
 export default function AlianzaEmpresasItem() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center md:gap-4 h-[150px] gap-3 overflow-hidden ">
+    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center md:gap-4 h-[150px] gap-3  mt-6 overflow-hidden ">
       {items.map((item, index) => (
         <div key={index} className=" flex overflow-hidden ">
           <img
