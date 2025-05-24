@@ -1,4 +1,5 @@
 import Article from '@/components/compras/article'
+import { compras } from '@/data/quecomprar/compras'
 import Image from 'next/image'
 import React from 'react'
 
@@ -25,7 +26,7 @@ export default function ComprasPage() {
           </p>
 
           <div className='grid grid-cols-1 mt-4 '>
-            {Article.map((article, index) =>(
+            {compras.map((article, index) =>(
               <Article key={index} titulo={article.titulo} descripcion={article.descripcion} img={article.img} />
             ))}
           </div>

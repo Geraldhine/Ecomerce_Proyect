@@ -1,16 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ComprasProps {
-  titulo: string;
-  descripcion: string;
-  img: string;
+    id: string,
+    titulo: string;
+    descripcion: string;
+    img: string;
 }
 
-export default function Article({titulo, descripcion, img}:ComprasProps) {
+export default function Article({id, titulo, descripcion, img }: ComprasProps) {
     return (
 
-        <div className='flex flex-row justify-center gap-3 w-[100%] bg-amber-600'>
-            <article className='flex flex-col items-start w-[67%] h-[300px]'>
+        <div className='flex flex-row justify-center gap-3 w-[100%] '>
+            <article className='flex flex-col items-start w-4xl h-[300px]'>
                 <h3 className='font-semibold mb-3'>
                     {titulo}
                 </h3>
@@ -19,11 +21,16 @@ export default function Article({titulo, descripcion, img}:ComprasProps) {
                         {descripcion}
                     </p>
                 </div>
-                <button href="#" className='bg-blue-700 text-blue-50 rounded mt-2 mb-2 text-[20px] border-b-black flex'>Ver más</button>
+                <div >
+                    {/* <button className="bg-blue-700 hover:bg-blue-300 text-white font-semibold text-sm rounded px-4 py-1 transition-colors duration-200 mt-3">
+                        Ver más
+                    </button> */}
+                    <Link href={`/compras/comprasdetalle/${id}`} className="bg-blue-700 hover:bg-blue-300 text-white font-semibold text-sm rounded px-4 py-1 mt-3"></Link>
+                </div>
             </article>
-            <a href="" className='w-[33%] self-center mb-2 ml-2 bg-amber-50'>
-                <Image src={img} width={200} height={200} alt="imagenes" />
-            </a>
+            <Link href={`/compras/comprasdetalle/${id}`} className='self-center-safe mb-2 w-1x4 object-center ml-10 '>
+                <Image src={img} width={200} height={150} alt="imagenes" className="cursor-pointer animate-pulse duration-200" />
+            </Link>
         </div>
 
     );
