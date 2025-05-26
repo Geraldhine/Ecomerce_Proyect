@@ -15,7 +15,7 @@ export default function BlogsPage() {
 
   return (
     <>
-      <div className="flex  gap-[90px] justify-center items-center">
+      <div className="flex sm:gap-[90px] gap-[40px]  justify-center items-center">
         <SeccionBody
           img="https://www.rabimport.com/image/icon-categorias.png"
           palabra1="Nuestros"
@@ -41,7 +41,7 @@ export default function BlogsPage() {
         </nav>
       </div>
 
-      <div className="flex flex-wrap ml-7 gap-3">
+      <div className="flex sm:justify-center gap-3 mt-6 mb-6 mr-6 ml-6">
         {blogsFiltrados.length === 0 ? (
           <p className="text-sm text-gray-600">No hay blogs en esta categoría.</p>
         ) : (

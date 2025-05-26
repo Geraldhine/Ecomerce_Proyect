@@ -5,6 +5,7 @@ import React from 'react'
 
 
 
+
 export default function ComprasPage() {
   return (
     <div className="text-2xl">
@@ -26,9 +27,13 @@ export default function ComprasPage() {
           </p>
 
           <div className='grid grid-cols-1 mt-4 '>
-            {compras.map((article, index) =>(
-              <Article key={index} titulo={article.titulo} descripcion={article.descripcion} img={article.img} />
-            ))}
+
+            {compras.map((compras, index) =>{
+              return (
+                <Article key={index} titulo={compras.titulo} descripcion={compras.descripcion} img={compras.img} />
+              )
+            })}
+
           </div>
         </div>
       </section>

@@ -9,22 +9,22 @@ interface CardProps {
 
 export default function Card({ img, description }: CardProps) {
   return (
-    <Box className="flex flex-col justify-start items-start w-[120px] h-[300px]  overflow-hidden bg-white md:w-[220px] md:h-[300px] ">
-      <Box className="flex flex-col justify-center items-center w-[100px] h-[70px]">  
+    <Box className="flex flex-col w-[120px] h-[290px] overflow-hidden bg-white md:w-[200px] md:h-[300px] shadow rounded">
+      <Box className="w-full h-[100px] md:h-[120px]  flex items-center justify-center overflow-hidden">
         <img
           src={img}
           alt="Logo"
-          className="w-full object-cover mb-2 self-center"
+          className="w-[80%] h-full object-contain"
         />
       </Box>
 
-      <hr className="w-full border-t border-gray-300 mb-3" />
+      <hr className="w-full border-t border-gray-300 my-2" />
 
-      <p className="text-[11px] text-left line-clamp-5 break-words font-sans-serif">
+      <p className="text-[9px] sm:text-[10px] text-left px-2 line-clamp-4 break-words font-sans">
         {description}
       </p>
 
-      <div className=" flex flex-col ">
+      <div className="flex flex-col items-center gap-1">
         <BotonMarcas BotonNombre="Leer más" />
         <BotonMarcas BotonNombre="Ver Productos" />
       </div>

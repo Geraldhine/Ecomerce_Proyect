@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Geraldhine" }],
 };
 
-export default function AboutPage() {
+export default function NosotrosPage() {
   return (
     <>
       <div className="flex flex-col mr-[10px] ml-[10px] sm:mr-[10px] sm:ml-[10px] md:mr-[40px] md:ml-[40px] lg:mr-[50px] lg:ml-[50px]">
@@ -24,20 +24,22 @@ export default function AboutPage() {
             palabra2="empresa"
           />
         </div>
-
         <div>
           <ImagenEmpresa />
         </div>
+        <hr />
         <div>
           <ColecionImages />
         </div>
+        <hr />
         <div>
           <MisionVision />
         </div>
+        <hr />
         <div>
         <h3 className="text-2xl font-bold mt-5 text-center">¿Dónde estamos?</h3>
         </div>
-        <div className="flex flex-wrap justify-center  mt-4 gap-10  sm:gap-8 md:gap-8 lg:gap-10">
+        <div className="flex flex-wrap justify-center  mt-4 gap-10  mb-5 sm:gap-8 md:gap-8 lg:gap-10">
           {CardInfo.map(
             (
               CardInfo: {

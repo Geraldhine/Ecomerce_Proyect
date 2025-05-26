@@ -7,7 +7,8 @@ interface SliderItemTestimoniosProps {
 
 export default function SliderItemTestimonios({ title, description }: SliderItemTestimoniosProps) {
   return (
-    <div className="flex  items-center text-center w-[30%] flex-col  bg-white rounded-lg ">
+
+    <div className="flex flex-col flex-wrap items-center text-center w-[190px] sm:w-[300px]  bg-white rounded-lg  ">
       <UserCircleIcon className="w-16 h-16 text-sky-300" />
       <div className="w-full">
         <p className=" text-[13px] font-bold ">{title}</p>
